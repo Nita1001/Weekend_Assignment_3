@@ -1,0 +1,62 @@
+
+/* ----------------------------Nav container */
+#nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #141921;
+  color: white;
+  height: 8rem;
+}
+
+#nav-right{
+  margin-right: 2rem;
+}
+/* Flex and space between navbar uls*/
+nav#nav-left ul, #nav-right ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25rem;
+  /* border: solid salmon; */
+}
+#nav-middle {
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#nav-middle input{
+  width: 180rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0 4.8rem;
+}
+#nav-middle select{
+  width: 4rem;
+  height: 3rem;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 0.2rem;
+  position: absolute;
+  width: 4rem;
+  font-size: 1.6rem;
+}
+
+/* -------------------  [nav-left]  -------- */
+
+img{
+  background: url(/Assets/images/navSprite.png) no-repeat -10px -90px;
+	width: 76px;
+	height: 23px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+img#locationlogo{
+  background: url(/Assets/images/navSprite.png) no-repeat -71px -379px;
+	width: 15px;
+	height: 17px;
+}
+
