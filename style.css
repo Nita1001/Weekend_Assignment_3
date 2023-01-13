@@ -106,9 +106,9 @@ div.grid-container{
   display: grid;
   grid-template-areas: 
   'top top top top top top'
-  'left img1 img1 img1 right right'
-  'left img1 img1 img1 right right'
-  'left img1 img1 img1 right right' ;
+  'left middle middle middle right right'
+  'left middle middle middle right right'
+  'left middle middle middle right right' ;
   gap: 1rem;
   padding: 1rem;
   margin-top: 6rem;
@@ -124,7 +124,7 @@ div.grid-container{
   grid-area: top;
 }
 .item1{
-  grid-area: img1;
+  grid-area: middle;
 }
 .item2{
   grid-area: left;
