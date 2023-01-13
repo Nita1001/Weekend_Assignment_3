@@ -1,5 +1,5 @@
 
-/* ----------------------------Nav container */
+/* ---------------------------- Main nav container */
 #nav-container{
   display: flex;
   align-items: center;
@@ -12,16 +12,15 @@
 #nav-right{
   margin-right: 2rem;
 }
-/* Flex and space between navbar uls*/
+/* Flex and space between for left&right nav uls*/
 nav#nav-left ul, #nav-right ul{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 25rem;
-  /* border: solid salmon; */
 }
 
-/* Middle Search Nav  */
+/* --- Middle Search Nav---  */
 
 #nav-middle {
   display: flex;
@@ -67,7 +66,7 @@ nav#nav-left ul, #nav-right ul{
 	height: 21px;
 }
 
-/* -------------------  [nav-left]  -------- */
+/* -------------------[main nav-left]  -------- */
 
 img#logo{
   background: url(/Assets/images/navSprite.png) no-repeat -10px -51px;
@@ -82,16 +81,69 @@ img#location-logo{
 	width: 15px;
 	height: 17px;
 }
-/* --- Seconed nav */
 
+
+
+/* --------------------------------------------- Second nav */
   nav.seconed-nav{
   background-color: #222f3e;
   height: 4rem;
 }
 
-/* --- Third nav */
+
+
+/* --------------------------------------------- Third nav */
 nav.Third-nav{
   background-color: #fafafa;
   height: 3rem;
   border-bottom: solid 1px #e1e1e1;
+}
+
+/* [BODY] */
+/* Grid */
+div.grid-container{
+  max-width: 60vw;
+  display: grid;
+  grid-template-areas: 
+  'top top top top top top'
+  'left img1 img1 img1 right right'
+  'left img1 img1 img1 right right'
+  'left img1 img1 img1 right right' ;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 6rem;
+  margin-left: 14vw;
+
+}
+.grid-container > div {
+  background-color: rgba(119, 56, 56, 0.8);
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.item0{
+  grid-area: top;
+}
+.item1{
+  grid-area: img1;
+}
+.item2{
+  grid-area: left;
+  border: solid 2px black;
+}
+.item3{
+  grid-area: right;
+}
+
+/* Product images and styling */
+body div img#himicoToga3{
+  max-width: 30%;
+  max-height: auto;
+}
+body div img#himicoToga2{
+  max-width: 30%;
+  max-height: auto;
+}
+body div img#himicoToga1{
+  max-width: 50%;
+  max-height: auto;
 }
