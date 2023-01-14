@@ -1,5 +1,5 @@
 
-/* ---------------------------- Main nav container */
+  /* ---------------------------- Main nav container */
 #nav-container{
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@
 
 
 /* Flex and space between for left&right nav*/
-
+/* nav right */
 nav#nav-right{
   margin-right: 2rem;
 }
@@ -26,7 +26,7 @@ nav#nav-right{
   width: 5rem;
   height: 4rem;
 }
-
+/* nav left */
 nav#nav-left{
   display: flex;
   align-items: center;
@@ -64,7 +64,7 @@ nav#nav-left div h2{
   font-size: 16px;
   top: 0.1rem;
 }
-
+/* nav left links */
 div.logo a, div.location a{
   color: white;
 }
@@ -76,9 +76,10 @@ div.logo a, div.location a{
   position: relative;
   margin: 0;
   padding: 0;
+  margin-right: 5rem;
 }
 #nav-middle input{
-  width: 200rem;
+  width: 190rem;
   height: 4rem;
   border: none;
   border-radius: 0.4rem;
@@ -127,65 +128,112 @@ img#logo{
 }
 
 /* --------------------------------------------- Second nav */
-  nav.seconed-nav{
+  nav.second-nav{
   background-color: #222f3e;
   height: 4rem;
 }
-
-
+nav.second-nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+nav.second-nav ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
+  color: white;
+  
+}
 
 /* --------------------------------------------- Third nav */
-nav.Third-nav{
+nav.third-nav{
   background-color: #fafafa;
   height: 3rem;
   border-bottom: solid 1px #e1e1e1;
 }
+nav.third-nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #141921;
+}
+nav.third-nav ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
+  padding-top: 0.8rem;
+  color: #141921;
+}
 
 /* [BODY] */
-/* Grid */
-div.grid-container{
-  max-width: 60vw;
-  display: grid;
-  grid-template-areas: 
-  'top top top top top top'
-  'left middle middle middle right right'
-  'left middle middle middle right right'
-  'left middle middle middle right right' ;
-  gap: 1rem;
-  padding: 1rem;
-  margin-top: 6rem;
-  margin-left: 14vw;
 
+
+
+.item{
+  
 }
-.grid-container > div {
-  background-color: rgba(119, 56, 56, 0.8);
-  text-align: center;
-  padding: 0.5rem 0;
+/* Image Gallery */
+.pictures-container{
+  width: 30vw;
+  height: 50vh;
+  border: solid pink;
+  margin-left: 40rem;
+  margin-top: 10rem;
+  position: relative;
 }
-.item0{
-  grid-area: top;
+
+#current-img{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 12rem;
 }
-.item1{
-  grid-area: middle;
-}
-.item2{
-  grid-area: left;
-  border: solid 2px black;
-}
-.item3{
-  grid-area: right;
+
+div.pictures{
+  display: flex;
+  flex-direction: column;
+  width: 6rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 /* Product images and styling */
-body div img#himicoToga3{
-  max-width: 30%;
+
+div img#himicoToga3{
+  max-width: 100%;
   max-height: auto;
+  margin-bottom: 1rem;
 }
-body div img#himicoToga2{
-  max-width: 30%;
+div img#himicoToga2{
+  max-width: 100%;
   max-height: auto;
+  margin-bottom: 1rem;
 }
-body div img#himicoToga1{
-  max-width: 50%;
+
+#shadow{
+  box-shadow: 0 0 10px #febd69;
+}
+
+div img#himicoToga1{
+  max-width: 100%;
   max-height: auto;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px)
+{
+  select.menu-select{
+    visibility: hidden;
+  }
 }

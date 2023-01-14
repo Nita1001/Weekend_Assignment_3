@@ -11,7 +11,8 @@
 </head>
 <body>
 <header>
-  <nav id="nav-container" >
+  <nav id="nav-container" class="grid-container" >
+    
     <nav id="nav-left">
       <div class="logo">
         <a href="#"><img id="logo" src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%3E%3C/svg%3E" alt=""></a>
@@ -19,11 +20,10 @@
       <div class="location"><a href="#"><img id="location-logo" src= "data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%3E%3C/svg%3E" alt="">
         <h3>Deliver to</h3><br><h2>Israel</h2></a>
       </div>
-
-  
     </nav>
+
     <nav id="nav-middle">
-        <select name="All" id="pet-select">
+        <select name="All" class="menu-select">
           <option value="">All Departments</option>
           <option value="dog">Arts & Crafts</option>
           <option value="cat">Automotive</option>
@@ -35,6 +35,7 @@
         <div><button type="submit"><img src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%3E%3C/svg%3E" alt="Search icon"></button></div>
       </ul>
     </nav>
+
     <nav id="nav-right">
       <ul>
         <li><div>navR1</div></li>
@@ -43,34 +44,63 @@
         <li><div>navR1</div></li>
       </ul>
     </nav>
+
   </nav>
-  <nav class="seconed-nav"></nav>
-  <nav class="Third-nav"></nav>
+
+  <nav class="second-nav">
+    <ul>
+      <li><a href="#">All</a></li>
+      <li><a href="#">Test</a></li>
+      <li><a href="#">Test</a></li>
+      <li><a href="#">Test</a></li>
+      <li><a href="#">Test</a></li>
+      <li><a href="#">Test</a></li>
+    </ul>
+  </nav>
+  <nav class="third-nav">
+    <ul>
+      <li><a href="#"><strong>Toys & Games</strong></a></li>
+      <li><a href="#">Test</a></li>
+      <li><a href="#">Test</a></li>
+      <li><a href="#">Test</a></li>
+      <li><a href="#">Test</a></li>
+      <li><a href="#">Test</a></li>
+      <li><a href="#">Test</a></li>
+      <li><a href="#">Test</a></li>
+    </ul>
+  </nav>
 </header>
 
-<div class="grid-container">
-  <div class="item0">
-    <ul>
-      <li><a href="">something</a></li>
-      <li><a href="">something</a></li>
-      <li><a href="">something</a></li>
-    </ul>
+<div class="pictures-container">
+
+  <div class="current-img-container">
+    <img id="current-img" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga1.jpg" alt="">
   </div>
-  <div class="item1 imges-product">
-    <img id="himicoToga1" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga1.jpg" alt="">
-  </div>
-  <div class="item2">
+
+  <div class="pictures">
     <div>
-      <img id="himicoToga2" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga2.jpg" alt="">
+      <img id="himicoToga1" onmouseover="changePic(this)" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga1.jpg" alt="">
     </div>
     <div>
-      <img id="himicoToga3" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga3.jpg" alt="">
+      <img id="himicoToga2" onmouseover="changePic(this)" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga2.jpg" alt="">
     </div>
+    <div>
+      <img id="himicoToga3" onmouseover="changePic(this)" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga3.jpg" alt="">
     </div>
-  <div class="item3">
-    <h1>RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT</h1>
   </div>
+
+
+ <script>
+    const currentPic = document.getElementById("current-img");
+    const changePic = (img) => {
+    currentPic.src = img.src;
+  }
+ </script>
+
+
 </div>
 <!-- <hr> -->
+
+
 </body>
 </html>
