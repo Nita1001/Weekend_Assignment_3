@@ -1,5 +1,5 @@
 
-  /* ---------------------------- Main nav container */
+  /*************[Main nav container]******/
 #nav-container{
   display: flex;
   align-items: center;
@@ -8,7 +8,6 @@
   color: white;
   height: 6rem;
 }
-
 
 /* Flex and space between for left&right nav*/
 /* nav right */
@@ -64,12 +63,12 @@ nav#nav-left div h2{
   font-size: 16px;
   top: 0.1rem;
 }
-/* nav left links */
+/*****nav left links*****/
 div.logo a, div.location a{
   color: white;
 }
 
-/* --- Middle Search Nav---  */
+/****Middle Search Nav****/
 
 #nav-middle {
   display: flex;
@@ -87,7 +86,7 @@ div.logo a, div.location a{
   font-size: 1.6rem;
 }
 #nav-middle select{
-  width: 5.220rem;
+  width: 5rem;
   height: 4rem;
   background-color: #f3f3f3;
   border: none;
@@ -116,7 +115,7 @@ div.logo a, div.location a{
 	height: 21px;
 }
 
-/* -------------------[main nav-left logo]  -------- */
+/* -------------------[Main nav-left logo]  -------- */
 
 img#logo{
   background: url(/Assets/images/navSprite.png) no-repeat -10px -51px;
@@ -127,7 +126,7 @@ img#logo{
   margin-bottom: 1rem;
 }
 
-/* --------------------------------------------- Second nav */
+/**********************[Second nav]****************/
   nav.second-nav{
   background-color: #222f3e;
   height: 4rem;
@@ -147,7 +146,7 @@ nav.second-nav ul li a{
   
 }
 
-/* --------------------------------------------- Third nav */
+/**************[Third nav]***************/
 nav.third-nav{
   background-color: #fafafa;
   height: 3rem;
@@ -168,9 +167,7 @@ nav.third-nav ul li a{
   color: #141921;
 }
 
-/* [BODY] */
-
-
+/*****[BODY]***/
 
 .item{
   
@@ -178,20 +175,17 @@ nav.third-nav ul li a{
 /* Image Gallery */
 .pictures-container{
   width: 30vw;
-  height: 50vh;
-  border: solid pink;
+  height: 55vh;
   margin-left: 40rem;
   margin-top: 10rem;
   position: relative;
 }
-
 #current-img{
   width: 400px;
   height: 400px;
   position: absolute;
   left: 12rem;
 }
-
 div.pictures{
   display: flex;
   flex-direction: column;
@@ -199,37 +193,21 @@ div.pictures{
   margin-left: 2rem;
   margin-top: 2rem;
 }
+div.pictures div{
+  margin-bottom: 1rem;
+  height: 4rem;
+  border: solid 1px black;
+}
+div.pictures div:hover{
+  box-shadow: 0px 1px 5px 1px #e77600;
+}
+/**** Products small images size & styling ****/
 
-/* Product images and styling */
-
-div img#himicoToga3{
+div.pictures div img.himicoToga{
   max-width: 100%;
-  max-height: auto;
+  max-height: 100%;
   margin-bottom: 1rem;
 }
-div img#himicoToga2{
-  max-width: 100%;
-  max-height: auto;
-  margin-bottom: 1rem;
-}
-
-.shadow{
-  box-shadow: 0 0 10px #febd69;
-}
-
-div img#himicoToga1{
-  max-width: 100%;
-  max-height: auto;
-  margin-bottom: 1rem;
-}
-
-
-
-
-
-
-
-
 
 @media (max-width: 800px)
 {

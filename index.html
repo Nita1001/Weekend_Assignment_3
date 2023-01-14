@@ -10,7 +10,7 @@
   <title>Document</title>
 </head>
 <body>
-<header>
+  <header>
   <nav id="nav-container" class="grid-container" >
     
     <nav id="nav-left">
@@ -69,38 +69,33 @@
       <li><a href="#">Test</a></li>
     </ul>
   </nav>
-</header>
+  </header>
 
-<div class="pictures-container">
-
-  <div class="current-img-container">
-    <img id="current-img" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga1.jpg" alt="">
+  <div class="pictures-container">
+    <div class="current-img-container">
+      <img id="current-img" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga1.jpg" alt="">
+    </div>
+  
+    <div class="pictures">
+      <div>
+        <img class="himicoToga" onmouseover="changePic(this)" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga1.jpg" alt="">
+      </div>
+      <div>
+        <img class="himicoToga" onmouseover="changePic(this)" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga2.jpg" alt="">
+      </div>
+      <div>
+        <img class="himicoToga" onmouseover="changePic(this)" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga3.jpg" alt="">
+      </div>
+      <div>
+        <img class="himicoToga" onmouseover="changePic(this)" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga4.jpg" alt="">
+      </div>
+    </div>
+    <script>
+      const currentPic = document.getElementById("current-img");
+      const changePic = (img) => {
+      currentPic.src = img.src;
+      }
+    </script>
   </div>
-
-  <div class="pictures">
-    <div>
-      <img class="shadow" id="himicoToga1" onmouseover="changePic(this)" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga1.jpg" alt="">
-    </div>
-    <div>
-      <img id="himicoToga2" onmouseover="changePic(this)" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga2.jpg" alt="">
-    </div>
-    <div>
-      <img id="himicoToga3" onmouseover="changePic(this)" src="/Assets/images/FuncoPopAnimationMyHeroAcademiaHimikoToga3.jpg" alt="">
-    </div>
-  </div>
-
-
- <script>
-    const currentPic = document.getElementById("current-img");
-    const changePic = (img) => {
-    currentPic.src = img.src;
-  }
- </script>
-
-
-</div>
-<!-- <hr> -->
-
-
 </body>
 </html>
