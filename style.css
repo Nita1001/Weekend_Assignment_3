@@ -9,15 +9,64 @@
   height: 6rem;
 }
 
-#nav-right{
+
+/* Flex and space between for left&right nav*/
+
+nav#nav-right{
   margin-right: 2rem;
 }
-/* Flex and space between for left&right nav uls*/
-nav#nav-left ul, #nav-right ul{
+#nav-right ul{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 25rem;
+}
+#nav-right div{
+  border: solid white;
+  width: 5rem;
+  height: 4rem;
+}
+
+nav#nav-left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30rem;
+  position: relative;
+}
+nav#nav-left div.logo{
+  width: 35rem;
+}
+nav#nav-left div.location img#location-logo{
+  background: url(/Assets/images/navSprite.png) no-repeat -71px -379px;
+	width: 15px;
+	height: 17px;
+  position: absolute;
+  top: 0.3rem;
+  left: 0.2rem;
+}
+nav#nav-left div.location{
+  width: 35rem;
+  top: 0.5rem;
+  position: relative;
+}
+nav#nav-left div h3{
+  position: absolute;
+  left: 2.1rem;
+  color: rgb(191, 190, 190);
+  font-size: 1.2rem;
+  font-weight: normal;
+  bottom: 1rem;
+}
+nav#nav-left div h2{
+  position: absolute;
+  left: 2.1rem;
+  font-size: 16px;
+  top: 0.1rem;
+}
+
+div.logo a, div.location a{
+  color: white;
 }
 
 /* --- Middle Search Nav---  */
@@ -66,7 +115,7 @@ nav#nav-left ul, #nav-right ul{
 	height: 21px;
 }
 
-/* -------------------[main nav-left]  -------- */
+/* -------------------[main nav-left logo]  -------- */
 
 img#logo{
   background: url(/Assets/images/navSprite.png) no-repeat -10px -51px;
@@ -76,13 +125,6 @@ img#logo{
   margin-left: 2.2rem;
   margin-bottom: 1rem;
 }
-img#location-logo{
-  background: url(/Assets/images/navSprite.png) no-repeat -71px -379px;
-	width: 15px;
-	height: 17px;
-}
-
-
 
 /* --------------------------------------------- Second nav */
   nav.seconed-nav{
