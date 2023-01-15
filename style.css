@@ -1,17 +1,85 @@
+@font-face {
+  font-family: "Amazon Ember";
+  font-weight: 200;
+  src: url(https://m.media-amazon.com/images/S/sash/Dv1WQ5DdeMS5qP7.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/e0LnMbFWJC-TMQz.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  font-weight: 200;
+  font-style: italic;
+  src: url(https://m.media-amazon.com/images/S/sash/ozb5-CLHQWI6Soc.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/twzZHebXjCHBb6v.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  src: url(https://m.media-amazon.com/images/S/sash/pDxWAF1pBB0dzGB.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/kfKKBuoqcD$AUKL.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  font-style: italic;
+  src: url(https://m.media-amazon.com/images/S/sash/WOnTLzkiaEccV7F.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/JJsp0ZvgpfwzJM6.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  font-weight: 500;
+  src: url(https://m.media-amazon.com/images/S/sash/VjTR4RqBzY0mUYx.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/XIvhNCZAsrT80Wz.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  font-weight: 500;
+  font-style: italic;
+  src: url(https://m.media-amazon.com/images/S/sash/KwhNPG8Jz-Vz2X7.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/YAEPfuhs1l-argd.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  font-weight: 700;
+  src: url(https://m.media-amazon.com/images/S/sash/KFPk-9IF4FqAqY-.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/mzVbGSgvdBfRLX9.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://m.media-amazon.com/images/S/sash/2SazJx$EeTHfhMN.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/CjbL$jCCegyfqZ7.woff)
+      format("woff");
+}
+body {
+  font-family: "Amazon Ember", Arial, sans-serif;
+}
+
+header{
+  max-width: 100vw;
+}
 
   /*************[Main nav container]******/
 #nav-container{
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: #141921;
   color: white;
   height: 6rem;
-  max-width: 100vw;
-  width: 100%;
 }
-
-/* Flex and space between for left&right nav*/
 /* nav right */
 nav#nav-right{
   margin-right: 2rem;
@@ -19,7 +87,7 @@ nav#nav-right{
 #nav-right ul{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-self: end;
   width: 25rem;
 }
 #nav-right div{
@@ -71,17 +139,16 @@ div.logo a, div.location a{
 }
 
 /****Middle Search Nav****/
-
 #nav-middle {
   display: flex;
+  flex-grow: 1;
   position: relative;
   margin: 0;
   padding: 0;
   margin-right: 5rem;
 }
 #nav-middle input{
-  max-width: 200%;
-  width: 60vw;
+  flex-grow: 1;
   height: 4rem;
   border: none;
   border-radius: 0.4rem;
@@ -122,7 +189,6 @@ div.logo a, div.location a{
 }
 
 /* -------------------[Main nav-left logo]  -------- */
-
 img#logo{
   background: url(/Assets/images/navSprite.png) no-repeat -10px -51px;
   width: 96px;
@@ -137,27 +203,25 @@ nav.second-nav{
   background-color: #222f3e;
   height: 3.6rem;
 }
-nav.second-nav > div{
+nav.second-nav div{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+nav.second-nav div div{
+  margin: 0.3rem 0.2rem 0.1rem 2rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.4rem;
+}
 
-}
-nav.second-nav ul{
+nav.second-nav div div a{
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  color: white;
-}
-nav.second-nav ul li a{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 0.4rem;
-  padding-top: 0.4rem;
+  justify-content: space-between;
   font-size: 1.3rem;
   font-weight: 500;
-  min-width: 10rem;
   color: white;
 }
-nav.second-nav ul li a:hover{
+nav.second-nav div div a:hover{
   border: solid 1px white;
 }
 
@@ -168,23 +232,25 @@ nav.third-nav{
   height: 3rem;
   border-bottom: solid 1px #e1e1e1;
 }
-nav.third-nav ul{
+nav.third-nav div.div-container{
   display: flex;
   align-items: center;
   justify-content: flex-start;
   color: #141921;
-  width: 0;
 }
-nav.third-nav ul li a{
+nav.third-nav div.div-container div{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 14rem;
-  padding-top: 0.8rem;
+  padding-top: 0.6rem;
   color: #141921;
-  height: 3rem;
+  max-height: 3rem;
+  margin-left: 2rem;
 }
-nav.third-nav ul li a:hover{
+div.div-container div a{
+  text-decoration: none;
+}
+nav.third-nav div.div-container div a:hover{
   color:#e77600;
   border-bottom: solid #e77600;
 }
